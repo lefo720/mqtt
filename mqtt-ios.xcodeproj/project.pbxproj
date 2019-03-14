@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		98892440223A9F420035B4D3 /* mqtt_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98892436223A9F420035B4D3 /* mqtt_ios.framework */; };
+		98892445223A9F420035B4D3 /* mqtt_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98892444223A9F420035B4D3 /* mqtt_iosTests.swift */; };
+		98892447223A9F420035B4D3 /* mqtt_ios.h in Headers */ = {isa = PBXBuildFile; fileRef = 98892439223A9F420035B4D3 /* mqtt_ios.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9889245E223A9F540035B4D3 /* TVMiddelAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 98892451223A9F530035B4D3 /* TVMiddelAdapter.m */; };
+		9889245F223A9F540035B4D3 /* HKIMManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98892452223A9F530035B4D3 /* HKIMManager.swift */; };
+		98892460223A9F540035B4D3 /* HKIMSignTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 98892453223A9F530035B4D3 /* HKIMSignTool.m */; };
+		98892461223A9F540035B4D3 /* HKMQTTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98892454223A9F530035B4D3 /* HKMQTTManager.swift */; };
+		98892462223A9F540035B4D3 /* HKConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98892455223A9F530035B4D3 /* HKConnect.swift */; };
+		98892463223A9F540035B4D3 /* HKClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98892456223A9F530035B4D3 /* HKClientManager.swift */; };
+		98892464223A9F540035B4D3 /* LEUserTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98892457223A9F530035B4D3 /* LEUserTools.swift */; };
+		98892465223A9F540035B4D3 /* HKClientManager+Extend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98892458223A9F530035B4D3 /* HKClientManager+Extend.swift */; };
+		98892466223A9F540035B4D3 /* HKIMSignTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 98892459223A9F530035B4D3 /* HKIMSignTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98892467223A9F540035B4D3 /* HKKeyCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9889245A223A9F530035B4D3 /* HKKeyCenter.swift */; };
+		98892468223A9F540035B4D3 /* TVMiddelAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9889245B223A9F530035B4D3 /* TVMiddelAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98892469223A9F540035B4D3 /* HKChatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9889245C223A9F530035B4D3 /* HKChatManager.swift */; };
+		9889246A223A9F540035B4D3 /* HKMQTTUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9889245D223A9F530035B4D3 /* HKMQTTUser.swift */; };
+		9889246C223AA5580035B4D3 /* TVMiddelAdapter.m in Headers */ = {isa = PBXBuildFile; fileRef = 98892451223A9F530035B4D3 /* TVMiddelAdapter.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		9889246D223AA5A60035B4D3 /* HKKeyCenter.swift in Headers */ = {isa = PBXBuildFile; fileRef = 9889245A223A9F530035B4D3 /* HKKeyCenter.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAAE2B4A6296AFF244714943 /* Pods_mqtt_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EBDF52DB7DC2D23DD737E3D /* Pods_mqtt_ios.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		98892441223A9F420035B4D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9889242D223A9F410035B4D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98892435223A9F420035B4D3;
+			remoteInfo = "mqtt-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		161FD5CBB30990CB23964A98 /* Pods-mqtt-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mqtt-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-mqtt-ios/Pods-mqtt-ios.release.xcconfig"; sourceTree = "<group>"; };
+		4EBDF52DB7DC2D23DD737E3D /* Pods_mqtt_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mqtt_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		530A156EF917A0A3760A6681 /* Pods-mqtt-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mqtt-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mqtt-ios/Pods-mqtt-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		98892436223A9F420035B4D3 /* mqtt_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = mqtt_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98892439223A9F420035B4D3 /* mqtt_ios.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mqtt_ios.h; sourceTree = "<group>"; };
+		9889243A223A9F420035B4D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9889243F223A9F420035B4D3 /* mqtt-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mqtt-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98892444223A9F420035B4D3 /* mqtt_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mqtt_iosTests.swift; sourceTree = "<group>"; };
+		98892446223A9F420035B4D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98892451223A9F530035B4D3 /* TVMiddelAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVMiddelAdapter.m; sourceTree = "<group>"; };
+		98892452223A9F530035B4D3 /* HKIMManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKIMManager.swift; sourceTree = "<group>"; };
+		98892453223A9F530035B4D3 /* HKIMSignTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKIMSignTool.m; sourceTree = "<group>"; };
+		98892454223A9F530035B4D3 /* HKMQTTManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKMQTTManager.swift; sourceTree = "<group>"; };
+		98892455223A9F530035B4D3 /* HKConnect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKConnect.swift; sourceTree = "<group>"; };
+		98892456223A9F530035B4D3 /* HKClientManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKClientManager.swift; sourceTree = "<group>"; };
+		98892457223A9F530035B4D3 /* LEUserTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LEUserTools.swift; sourceTree = "<group>"; };
+		98892458223A9F530035B4D3 /* HKClientManager+Extend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HKClientManager+Extend.swift"; sourceTree = "<group>"; };
+		98892459223A9F530035B4D3 /* HKIMSignTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKIMSignTool.h; sourceTree = "<group>"; };
+		9889245A223A9F530035B4D3 /* HKKeyCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKKeyCenter.swift; sourceTree = "<group>"; };
+		9889245B223A9F530035B4D3 /* TVMiddelAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVMiddelAdapter.h; sourceTree = "<group>"; };
+		9889245C223A9F530035B4D3 /* HKChatManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKChatManager.swift; sourceTree = "<group>"; };
+		9889245D223A9F530035B4D3 /* HKMQTTUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKMQTTUser.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		98892433223A9F420035B4D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAAE2B4A6296AFF244714943 /* Pods_mqtt_ios.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9889243C223A9F420035B4D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98892440223A9F420035B4D3 /* mqtt_ios.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		295CFB319E5B729DCC57F6DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4EBDF52DB7DC2D23DD737E3D /* Pods_mqtt_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9889242C223A9F410035B4D3 = {
+			isa = PBXGroup;
+			children = (
+				98892438223A9F420035B4D3 /* mqtt-ios */,
+				98892443223A9F420035B4D3 /* mqtt-iosTests */,
+				98892437223A9F420035B4D3 /* Products */,
+				E93179A09B6E95A0449F13C5 /* Pods */,
+				295CFB319E5B729DCC57F6DC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		98892437223A9F420035B4D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98892436223A9F420035B4D3 /* mqtt_ios.framework */,
+				9889243F223A9F420035B4D3 /* mqtt-iosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98892438223A9F420035B4D3 /* mqtt-ios */ = {
+			isa = PBXGroup;
+			children = (
+				98892450223A9F530035B4D3 /* IMTool */,
+				98892439223A9F420035B4D3 /* mqtt_ios.h */,
+				9889243A223A9F420035B4D3 /* Info.plist */,
+			);
+			path = "mqtt-ios";
+			sourceTree = "<group>";
+		};
+		98892443223A9F420035B4D3 /* mqtt-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				98892444223A9F420035B4D3 /* mqtt_iosTests.swift */,
+				98892446223A9F420035B4D3 /* Info.plist */,
+			);
+			path = "mqtt-iosTests";
+			sourceTree = "<group>";
+		};
+		98892450223A9F530035B4D3 /* IMTool */ = {
+			isa = PBXGroup;
+			children = (
+				98892451223A9F530035B4D3 /* TVMiddelAdapter.m */,
+				98892452223A9F530035B4D3 /* HKIMManager.swift */,
+				98892459223A9F530035B4D3 /* HKIMSignTool.h */,
+				98892453223A9F530035B4D3 /* HKIMSignTool.m */,
+				98892454223A9F530035B4D3 /* HKMQTTManager.swift */,
+				98892455223A9F530035B4D3 /* HKConnect.swift */,
+				98892456223A9F530035B4D3 /* HKClientManager.swift */,
+				98892457223A9F530035B4D3 /* LEUserTools.swift */,
+				98892458223A9F530035B4D3 /* HKClientManager+Extend.swift */,
+				9889245A223A9F530035B4D3 /* HKKeyCenter.swift */,
+				9889245B223A9F530035B4D3 /* TVMiddelAdapter.h */,
+				9889245C223A9F530035B4D3 /* HKChatManager.swift */,
+				9889245D223A9F530035B4D3 /* HKMQTTUser.swift */,
+			);
+			path = IMTool;
+			sourceTree = "<group>";
+		};
+		E93179A09B6E95A0449F13C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				530A156EF917A0A3760A6681 /* Pods-mqtt-ios.debug.xcconfig */,
+				161FD5CBB30990CB23964A98 /* Pods-mqtt-ios.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		98892431223A9F420035B4D3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9889246D223AA5A60035B4D3 /* HKKeyCenter.swift in Headers */,
+				98892466223A9F540035B4D3 /* HKIMSignTool.h in Headers */,
+				98892468223A9F540035B4D3 /* TVMiddelAdapter.h in Headers */,
+				9889246C223AA5580035B4D3 /* TVMiddelAdapter.m in Headers */,
+				98892447223A9F420035B4D3 /* mqtt_ios.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		98892435223A9F420035B4D3 /* mqtt-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9889244A223A9F420035B4D3 /* Build configuration list for PBXNativeTarget "mqtt-ios" */;
+			buildPhases = (
+				4CC1B81058F064799815B691 /* [CP] Check Pods Manifest.lock */,
+				98892431223A9F420035B4D3 /* Headers */,
+				98892432223A9F420035B4D3 /* Sources */,
+				98892433223A9F420035B4D3 /* Frameworks */,
+				98892434223A9F420035B4D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "mqtt-ios";
+			productName = "mqtt-ios";
+			productReference = 98892436223A9F420035B4D3 /* mqtt_ios.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9889243E223A9F420035B4D3 /* mqtt-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9889244D223A9F420035B4D3 /* Build configuration list for PBXNativeTarget "mqtt-iosTests" */;
+			buildPhases = (
+				9889243B223A9F420035B4D3 /* Sources */,
+				9889243C223A9F420035B4D3 /* Frameworks */,
+				9889243D223A9F420035B4D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98892442223A9F420035B4D3 /* PBXTargetDependency */,
+			);
+			name = "mqtt-iosTests";
+			productName = "mqtt-iosTests";
+			productReference = 9889243F223A9F420035B4D3 /* mqtt-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9889242D223A9F410035B4D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Lefo;
+				TargetAttributes = {
+					98892435223A9F420035B4D3 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					9889243E223A9F420035B4D3 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 98892430223A9F410035B4D3 /* Build configuration list for PBXProject "mqtt-ios" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9889242C223A9F410035B4D3;
+			productRefGroup = 98892437223A9F420035B4D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98892435223A9F420035B4D3 /* mqtt-ios */,
+				9889243E223A9F420035B4D3 /* mqtt-iosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		98892434223A9F420035B4D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9889243D223A9F420035B4D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4CC1B81058F064799815B691 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mqtt-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98892432223A9F420035B4D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98892460223A9F540035B4D3 /* HKIMSignTool.m in Sources */,
+				9889245F223A9F540035B4D3 /* HKIMManager.swift in Sources */,
+				98892464223A9F540035B4D3 /* LEUserTools.swift in Sources */,
+				98892461223A9F540035B4D3 /* HKMQTTManager.swift in Sources */,
+				98892469223A9F540035B4D3 /* HKChatManager.swift in Sources */,
+				98892463223A9F540035B4D3 /* HKClientManager.swift in Sources */,
+				9889246A223A9F540035B4D3 /* HKMQTTUser.swift in Sources */,
+				98892462223A9F540035B4D3 /* HKConnect.swift in Sources */,
+				98892467223A9F540035B4D3 /* HKKeyCenter.swift in Sources */,
+				9889245E223A9F540035B4D3 /* TVMiddelAdapter.m in Sources */,
+				98892465223A9F540035B4D3 /* HKClientManager+Extend.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9889243B223A9F420035B4D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98892445223A9F420035B4D3 /* mqtt_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		98892442223A9F420035B4D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98892435223A9F420035B4D3 /* mqtt-ios */;
+			targetProxy = 98892441223A9F420035B4D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		98892448223A9F420035B4D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		98892449223A9F420035B4D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9889244B223A9F420035B4D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 530A156EF917A0A3760A6681 /* Pods-mqtt-ios.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8T2YLC24J7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "mqtt-ios/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gsjy.mqtt-ios";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9889244C223A9F420035B4D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 161FD5CBB30990CB23964A98 /* Pods-mqtt-ios.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8T2YLC24J7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "mqtt-ios/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gsjy.mqtt-ios";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9889244E223A9F420035B4D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8T2YLC24J7;
+				INFOPLIST_FILE = "mqtt-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gsjy.mqtt-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9889244F223A9F420035B4D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8T2YLC24J7;
+				INFOPLIST_FILE = "mqtt-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gsjy.mqtt-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		98892430223A9F410035B4D3 /* Build configuration list for PBXProject "mqtt-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98892448223A9F420035B4D3 /* Debug */,
+				98892449223A9F420035B4D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9889244A223A9F420035B4D3 /* Build configuration list for PBXNativeTarget "mqtt-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9889244B223A9F420035B4D3 /* Debug */,
+				9889244C223A9F420035B4D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9889244D223A9F420035B4D3 /* Build configuration list for PBXNativeTarget "mqtt-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9889244E223A9F420035B4D3 /* Debug */,
+				9889244F223A9F420035B4D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9889242D223A9F410035B4D3 /* Project object */;
+}
